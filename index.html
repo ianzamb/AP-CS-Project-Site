@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Ian's Project</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Ian's Projects</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li>|</li>
+          <li><a href="aboutme.html">About Me</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="project-container">
+      <!--start of project template-->
+      <div class="project">
+        <img src="img/3.png" alt="Color app screenshot" />
+        <h2>Drawing App</h2>
+        <p>
+          <a
+            href="https://snap.berkeley.edu/project?username=idzambrano&projectname=Drawing%20App%20by%20Ian%20Zambrano%20and%20Michelle%20Han"
+            >Link</a
+          >
+        </p>
+        <p>
+          This is my Drawing App -- a joint project with a peer. We included RGB
+          sliders to change pen color, as well as polygon, star, circle,
+          asterisk, and flower preset tools. The aim was to create a drawing app
+          with various features/built-in designs for the user. The biggest
+          challenge we faced was related to the location and drawing of these
+          different designs -- the code for polygons, circles, and stars did not
+          work as intended. This was because any intended pen movement commands
+          were constantly overridden by another command, which forced the pen to
+          always move to the cursor. In other words, the pen would always snap
+          to an unintended location, rather than following the movement steps
+          outlined for that specific design. After lengthy troubleshooting, we
+          learned a solution -- a “pen active” variable was created, which
+          starts activated, or “true.” By doing so, we essentially have the pen
+          move traditionally (continuously following the cursor and pointing in
+          a certain direction), though only under certain circumstances -- being
+          when the pen is “active.” When the pen is not “active” (pen
+          active=false), it no longer moves to the cursor, and can draw the
+          desired shape in the desired location.
+        </p>
+        <div class="clear"></div>
+      </div>
+      <!--end of project template-->
+      <div class="project">
+        <img src="img/2.png" alt="Scratch final project" />
+        <h2>Scratch Final Project</h2>
+        <p><a href="https://scratch.mit.edu/projects/1051209408/">Link</a></p>
+        <p>
+          This was my final project for the AP Computer Science summer homework.
+          In this game, the user controls a spaceship, collecting as many coins
+          as possible as they fly through different parts of space. The mouse
+          cursor is used to move the ship. With this project, the goal was to
+          utilize all the new skills I had learned throughout the HarvardX:
+          “CS50's Introduction to Programming with Scratch” course. This
+          includes applications of operator, sensing, and variable blocks, among
+          many others. I accomplished this goal by employing every technique
+          introduced in earlier lessons. Still, it was not a straightforward
+          process -- there were many challenges. The biggest one was figuring
+          out how to make it appear as though the spaceship sprite was truly
+          approaching the planet sprite. Since the game is only in 2D, I created
+          the illusion of 3D movement by slowly enlarging the planet as the
+          user’s score increases. In this final project, I learned how to
+          brainstorm and create fully-fledged Scratch games with multiple
+          backdrops, moving sprites, score counters, and game-over mechanisms.
+        </p>
+        <div class="clear"></div>
+      </div>
+    </div>
+  </body>
+</html>
